@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir factorio-admin-command-center-locales
           shopt -s extglob
-          mv !(factorio-admin-command-center-locales) factorio-admin-command-center/
+          mv !(factorio-admin-command-center-locales) factorio-admin-command-center-locales/
 
       - name: Zip mod
         run: |
