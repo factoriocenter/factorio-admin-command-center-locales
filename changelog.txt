@@ -3,3 +3,5 @@ Version: 1.0.0
 Date: 2025-07-28
   Locale:
     - Created Russian locale
+    - Created Spanish locale
+    - Created Taiwan Chinese locale
