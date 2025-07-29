@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Versão para o nome do arquivo (ex: 1.0.1)"
+        description: "Version for file name (ex: 1.0.1)"
         required: true
         type: string
 

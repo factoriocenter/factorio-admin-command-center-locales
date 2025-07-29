@@ -1,0 +1,9 @@
+{
+  "name": "factorio-admin-command-center-locales",
+  "title": "Factorio Admin Command Center Locales",
+  "description": "This mod provides additional language support for the Factorio Admin Command Center mod.",
+  "author": "louanbastos",
+  "version": "1.0.0",
+  "factorio_version": "2.0",
+  "dependencies": ["factorio-admin-command-center >= 3.5.5"]
+}
