@@ -1,0 +1,47 @@
+# .github/workflows/release.yml
+name: Zip and Upload Mod
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Versão para o nome do arquivo (ex: 1.0.1)"
+        required: true
+        type: string
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Define version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "value=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
+          else
+            echo "value=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Prepare folder
+        run: |
+          mkdir factorio-admin-command-center-locales
+          shopt -s extglob
+          mv !(factorio-admin-command-center-locales) factorio-admin-command-center/
+
+      - name: Zip mod
+        run: |
+          zip -r "factorio-admin-command-center-locales_${{ steps.version.outputs.value }}.zip" factorio-admin-command-center-locales/
+
+      - name: Upload to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.value }}
+          files: factorio-admin-command-center-locales_${{ steps.version.outputs.value }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
