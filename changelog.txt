@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-08-27
+  Locale:
+    - New strings for Instant Blueprint Building, Instant Deconstruction, Instant Upgrading, and Instant Rail Planner
+---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2025-08-26
   Locale:
