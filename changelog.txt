@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 2026-03-18
+  Locale:
+    - Added locale strings for new modules: Repair Mined Item, Separate Distance Cheats, Surface Properties Editor, Planets Teleport, and Fast Teleport Manager
+    - Added locale strings for the new Stats HUD options and messages (including fuel/propellant labels)
+    - Synced and cleaned keys to match the latest FACC Remote API and GUI changes
+    - Updated wording for clearer instructions and consistent placeholders across supported languages
+
+---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 2026-03-13
   Locale:
