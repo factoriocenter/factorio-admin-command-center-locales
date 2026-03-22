@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.7
+Date: 2026-03-22
+  Locale:
+    - Synced locale texts for Non-mineable tools to match current-surface-only behavior.
+    - Added and updated strings for 4.2.0 startup settings (remove electricity usage, remove fuel usage, ignore recipe inputs).
+    - Cleaned duplicate and obsolete locale keys created during sync.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.6
 Date: 2026-03-18
   Locale:
@@ -71,3 +78,4 @@ Date: 2025-07-28
     - Created Russian locale
     - Created Spanish locale
     - Created Taiwan Chinese locale
+
