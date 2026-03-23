@@ -4,6 +4,7 @@ Date: 2026-03-22
   Locale:
     - Added locale strings for "Set Inventory Slots Bonus" in all external languages.
     - Added validation and tooltip texts for integer input and Toolbelt-based minimum rules.
+    - Removed "Convert to Legendary Quality" locale strings after feature removal in the main mod.
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.7
